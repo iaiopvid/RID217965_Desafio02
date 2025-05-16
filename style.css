@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #02A28F;
+    --text-light: #FFFFFF;
+    --text-dark: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--text-light);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    text-align: left;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+.highlight {
+    background-image: url(./imagens/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-light);
+    height: 45vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.highlight {
+    position: relative;
+    height: 300px;
+    background-image: url(./imagens/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    color: var(--text-light);
+}
+
+.highlight h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.highlight p {
+    margin: 0.25rem 0 0;
+    font-size: 0.95rem;
+}
+
+.highlight-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.highlight-content p strong{
+    font-weight: 700;
+}
+
+.section-title {
+    margin: 2rem 0 1rem;
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: var(--text-light);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content small {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.card-content p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #616161;
+    margin: 0.5rem 0;
+}
+
+.card-content p small {
+    font-size: 0.85rem;
+    color: var(--text-dark);
+    font-weight: 400;
+}
+
+.card-content p strong {
+    font-weight: 700;
+}
+
+.card-content h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aside-box {
+    background: var(--text-light);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.aside-title {
+    /* margin: 0 0 1rem; */
+    margin: 0 0.2rem 1rem 0.2rem;
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.popular-post {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #eee;
+    margin: 0.8rem 0.2rem 0.8rem 0.2rem;
+    overflow: hidden;
+}
+
+.popular-post img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.popular-post .info {
+    font-size: 0.75rem;
+    color: #616161;
+}
+
+.popular-post .info strong {
+    display: block;
+    font-size: 0.85rem;
+    color: #000000;
+}
+
+.categories {
+    padding: 0.75rem 1rem;
+}
+
+.categories li {
+    color: #616161;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
