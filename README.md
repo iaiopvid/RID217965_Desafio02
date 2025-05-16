@@ -1,8 +1,8 @@
-# RID217965_Desafio01
-Desenvolvimento de uma Landing Page aplicando HTML, CSS e criando funcionalidades com a linguagem de programação JavaScript.
+# RID217965_Desafio02
+Desafio: Desenvolvendo um Blog Responsivo
 
-## Link do Deploy na Netlify
-Link: `https://rid217965-desafio01.netlify.app`
+![image](https://github.com/user-attachments/assets/d52b55bf-7f3d-4985-b916-70f159c29c34)
 
-## Planilha de dados do Sheets
-Link: `https://docs.google.com/spreadsheets/d/1DPGJvxIxGjqmyxxiCYmyOxEEOPBMo32nBSMT1ioUZPM/edit?gid=0#gid=0`
+
+## Start project
+`index.html`
