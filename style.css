@@ -1,7 +1,7 @@
 :root {
     --primary-color: #02A28F;
-    --text-light: #FFFFFF;
-    --text-dark: #000000;
+    --light-color: #FFFFFF;
+    --dark-color: #000000;
 }
 
 * {
@@ -17,16 +17,16 @@ html, body {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: var(--text-light);
-    color: var(--text-dark);
+    background: var(--light-color);
+    color: var(--dark-color);
     display: flex;
     flex-direction: column;
 }
 
 header {
     background: var(--primary-color);
-    color: var(--text-light);
-    padding: 1rem;
+    color: var(--light-color);
+    padding: 1rem 8rem;
     text-align: left;
     font-size: 2.25rem;
     font-weight: bold;
@@ -35,24 +35,14 @@ header {
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 3rem 8rem;
     flex: 1;
 }
 
 .highlight {
-    background-image: url(./imagens/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--text-light);
-    height: 45vh;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.highlight {
     position: relative;
-    height: 300px;
+    height: 321px;
     background-image: url(./imagens/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -60,7 +50,7 @@ main {
     display: flex;
     align-items: flex-end;
     padding: 1rem;
-    color: var(--text-light);
+    color: var(--light-color);
 }
 
 .highlight h1 {
@@ -77,7 +67,7 @@ main {
 .highlight-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5rem;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .highlight-content p strong{
@@ -85,13 +75,21 @@ main {
 }
 
 .section-title {
-    margin: 2rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.6rem 0.1rem 0.6rem 0.1rem;
     background: var(--primary-color);
-    color: var(--text-light);
+    color: var(--light-color);
     font-weight: 700;
-    padding: 0.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 8px;
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#bt-show-all {
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 .posts {
@@ -101,9 +99,9 @@ main {
 }
 
 .card {
-    background: var(--text-light);
+    background: var(--light-color);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -131,7 +129,7 @@ main {
 
 .card-content p small {
     font-size: 0.85rem;
-    color: var(--text-dark);
+    color: var(--dark-color);
     font-weight: 400;
 }
 
@@ -148,43 +146,42 @@ main {
 aside {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .aside-box {
-    background: var(--text-light);
+    background: var(--light-color);
     border-radius: 8px;
     overflow: hidden;
 }
 
 .aside-title {
-    /* margin: 0 0 1rem; */
     margin: 0 0.2rem 1rem 0.2rem;
     background: var(--primary-color);
-    color: var(--text-light);
+    color: var(--light-color);
     font-weight: 700;
-    padding: 0.5rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 8px;
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .popular-post {
     display: flex;
     gap: 0.5rem;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.5rem;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #eee;
-    margin: 0.8rem 0.2rem 0.8rem 0.2rem;
+    margin: 0.8rem 0.5rem 0.8rem 0.5rem;
     overflow: hidden;
 }
 
 .popular-post img {
-    width: 60px;
+    width: 130px;
     height: 60px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .popular-post .info {
@@ -199,7 +196,7 @@ aside {
 }
 
 .categories {
-    padding: 0.75rem 1rem;
+    padding: 0 0.5rem;
 }
 
 .categories li {
@@ -208,13 +205,16 @@ aside {
     margin: 0.5rem 0;
     font-size: 0.95rem;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
     background: var(--primary-color);
-    color: var(--text-light);
+    color: var(--light-color);
     font-size: 0.85rem;
     font-weight: 600;
 }
