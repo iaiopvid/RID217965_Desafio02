@@ -75,26 +75,46 @@ main {
 }
 
 .section-title {
+    line-height: 3.25rem;
+    vertical-align: middle;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1.6rem 0.1rem 0.6rem 0.1rem;
     background: var(--primary-color);
     color: var(--light-color);
     font-weight: 700;
-    padding: 1rem 1.5rem;
+    padding: 0 1.5rem;
     border-radius: 8px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-#bt-show-all {
+.section-title button {
+    height: 2rem;
+    padding: 0 1rem;
+    vertical-align: middle;
+    border-radius: 4px;
+    border: none;
+    color: var(--light-color);
     font-size: 0.85rem;
     font-weight: 400;
     text-decoration: underline;
+    background-color: transparent;
+    background-image: none;
+}
+
+.section-title button:hover {
+    background-color: #115e5933;
+    transform: translateY(-2px);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.5s;
 }
 
 .posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
     gap: 1rem;
 }
 
@@ -141,6 +161,12 @@ main {
     margin: 0.5rem 0;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.card-content h3:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 aside {
@@ -195,6 +221,12 @@ aside {
     color: #000000;
 }
 
+.popular-post .info strong:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
 .categories {
     padding: 0 0.5rem;
 }
@@ -208,6 +240,12 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.categories li:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 footer {
