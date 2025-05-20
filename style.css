@@ -23,9 +23,14 @@ body {
     flex-direction: column;
 }
 
-header {
+nav {
     background: var(--primary-color);
     color: var(--light-color);
+}
+
+header {
+    margin: 0 auto;
+    max-width: 1440px;
     padding: 1rem 8rem;
     text-align: left;
     font-size: 2.25rem;
@@ -33,6 +38,8 @@ header {
 }
 
 main {
+    margin: 0 auto;
+    max-width: 1440px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
@@ -113,8 +120,7 @@ main {
 
 .posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    /* grid-template-columns: repeat(2, minmax(280px, 1fr)); */
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
     gap: 1rem;
 }
 
