@@ -1,127 +1,187 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dev News</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <header>The Dev News</header>
-    </nav>
-
-    <main>
-        <div>
-            <section class="highlight">
-                <div class="highlight-content">
-                    <p>opinião</p>
-                    <h1>Como é ser um desenvolvedor</h1>
-                    <p><strong>By</strong> Fábio Tetsuo</p>
-                </div>
-            </section>
-
-            <div class="section-title">
-                <span>Posts mais recentes</span>
-                <button>Ver Todos</button>
-            </div>
-            <section class="posts">
-                <div class="card">
-                    <img src="./imagens/mobile.png" alt="Post" />
-                    <div class="card-content">
-                        <small>desenvolvimento</small>
-                        <h3>Desenvolvimento mobile</h3>
-                        <p><strong>By</strong> Fábio Tetsuo</p>
-                        <p><small>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</small></p>
-                        <p>22 Agosto 2022</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./imagens/balance.png" alt="Post" />
-                    <div class="card-content">
-                        <small>saúde</small>
-                        <h3>Balancear vida profissional e pessoal</h3>
-                        <p><strong>By</strong> Írshão Setiawan</p>
-                        <p><small>Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.</small></p>
-                        <p>22 Agosto 2022</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./imagens/vscode.png" alt="Post" />
-                    <div class="card-content">
-                        <small>desenvolvimento</small>
-                        <h3>Configurando VSCode</h3>
-                        <p><strong>By</strong> Fábio Tetsuo</p>
-                        <p><small>Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</small></p>
-                        <p>22 Agosto 2022</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./imagens/monitores.png" alt="Post" />
-                    <div class="card-content">
-                        <small>produtividade</small>
-                        <h3>2 monitores ou 1 ultrawide?</h3>
-                        <p><strong>By</strong> Fulano da Silva</p>
-                        <p><small>Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</small></p>
-                        <p>22 Agosto 2022</p>
-                    </div>
-                </div>
-            </section>
+    <header class="header">
+        <div class="container">
+            <h1 class="blog-name">The Dev News</h1>
         </div>
+    </header>
 
-        <aside>
-            <section class="aside-box" id="popular">
-                <div class="aside-title">Posts populares</div>
-                <div class="popular-post">
-                    <img src="./imagens/desenvolvimento.png" alt="thumb" />
-                    <div class="info">
-                        <strong>Desenvolvimento atual</strong>
-                        <small>22 Agosto 2022</small>
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="featured-post">
+                    <div class="featured-image">
+                        <div class="post-category">opinião</div>
+                        <div class="post-info">
+                            <p class="post-author">opinião</p>
+                            <h1 class="post-title">Como é ser um desenvolvedor</h1>
+                            <p class="post-author fw500">
+                                <span class="fw700">By</span> Fábio Teixeira
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="popular-post">
-                    <img src="./imagens/gitlab.png" alt="thumb" />
-                    <div class="info">
-                        <strong>GitLab vs GitHub</strong>
-                        <small>22 Agosto 2022</small>
-                    </div>
-                </div>
-                <div class="popular-post">
-                    <img src="./imagens/cafe.png" alt="thumb" />
-                    <div class="info">
-                        <strong>Café atrapalha?</strong>
-                        <small>22 Agosto 2022</small>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="aside-box" id="category">
-                <div class="aside-title">Categorias</div>
-                <ul class="categories">
-                    <li>
-                        <span>> saúde</span>
-                        <span>(1)</span>
-                    </li>
-                    <li>
-                        <span>> desenvolvimento</span>
-                        <span>(2)</span>
-                    </li>
-                    <li>
-                        <span>> produtividade</span>
-                        <span>(2)</span>
-                    </li>
-                    <li>
-                        <span>> opinião</span>
-                        <span>(1)</span>
-                    </li>
-                </ul>
-            </section>
-        </aside>
+                <section class="recent-posts">
+                    <div class="section-header">
+                        <h2 class="section-title">Posts mais recentes</h2>
+                        <a href="#" class="view-all">Ver todos</a>
+                    </div>
+                    
+                    <div class="posts-grid">
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="imagens/mobile.png" alt="Desenvolvimento mobile">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-tag">desenvolvimento</span>
+                                <h3 class="post-title">Desenvolvimento mobile</h3>
+                                <p class="post-author fw500">
+                                    <span class="fw700">By</span> 
+                                    Fábio Teixeira
+                                </p>
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing in vitae urna commodo amet congue integer dapibus interdum semper mauris ornare...</p>
+                                <p class="post-date">22 Agosto 2022</p>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="imagens/balance.png" alt="Balancear vida profissional e pessoal">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-tag saude">saúde</span>
+                                <h3 class="post-title">Balancear vida profissional e pessoal</h3>
+                                <p class="post-author fw500">
+                                    <span class="fw700">By</span> 
+                                    Arthur Sampaio
+                                </p>
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur. Et consectetur at consectetur sed nisi tempor...</p>
+                                <p class="post-date">22 Agosto 2022</p>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="imagens/vscode.png" alt="Configurando VSCode">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-tag desenvolvimento">desenvolvimento</span>
+                                <h3 class="post-title">Configurando VSCode</h3>
+                                <p class="post-author fw500">
+                                    <span class="fw700">By</span> 
+                                    Fábio Teixeira
+                                </p>
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur. Proin interdum turpor ac sagittis id a etiam. Tellus vitae arcu dignissim massa placerat vel tellus...</p>
+                                <p class="post-date">22 Agosto 2022</p>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <img src="imagens/monitores.png" alt="2 monitores ou 1 ultrawide?">
+                            </div>
+                            <div class="post-content">
+                                <span class="post-tag produtividade">produtividade</span>
+                                <h3 class="post-title">2 monitores ou 1 ultrawide?</h3>
+                                <p class="post-author fw500">
+                                    <span class="fw700">By</span> 
+                                    Giulio da Silva
+                                </p>
+                                <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur. Arcu tellus adipiscing sagittis tristique. Eget malesuada posuere quam pretium venenatis...</p>
+                                <p class="post-date">22 Agosto 2022</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <section class="popular-posts">
+                    <h2 class="section-title">Posts populares</h2>
+                    
+                    <article class="popular-post-item">
+                        <div class="popular-post-image">
+                            <img src="imagens/desenvolvimento.png" alt="Desenvolvimento atual">
+                        </div>
+                        <div class="popular-post-content">
+                            <h3 class="popular-post-title">Desenvolvimento atual</h3>
+                            <p class="popular-post-date">22 Agosto 2022</p>
+                        </div>
+                    </article>
+                    
+                    <article class="popular-post-item">
+                        <div class="popular-post-image">
+                            <img src="imagens/gitlab.png" alt="GitLab vs GitHub">
+                        </div>
+                        <div class="popular-post-content">
+                            <h3 class="popular-post-title">GitLab vs GitHub</h3>
+                            <p class="popular-post-date">22 Agosto 2022</p>
+                        </div>
+                    </article>
+                    
+                    <article class="popular-post-item">
+                        <div class="popular-post-image">
+                            <img src="imagens/cafe.png" alt="Café atrapalhando?">
+                        </div>
+                        <div class="popular-post-content">
+                            <h3 class="popular-post-title">Café atrapalhando?</h3>
+                            <p class="popular-post-date">22 Agosto 2022</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="categories">
+                    <h2 class="section-title">Categorias</h2>
+
+                    <ul class="categories-list">
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-name">saúde</span>
+                                <span class="category-count">(1)</span>
+                            </a>
+                        </li>
+
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-name">desenvolvimento</span>
+                                <span class="category-count">(2)</span>
+                            </a>
+                        </li>
+
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-name">produtividade</span>
+                                <span class="category-count">(2)</span>
+                            </a>
+                        </li>
+
+                        <li class="category-item">
+                            <a href="#" class="category-link">
+                                <span class="category-name">opinião</span>
+                                <span class="category-count">(1)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
     </main>
 
-  <footer>Copyright@The Dev News</footer>
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">Copyright@The Dev News</p>
+        </div>
+    </footer>
 </body>
 </html>

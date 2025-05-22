@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-size:10px;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw800 {
+    font-weight: 800;
+}
+
+.fw900 {
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.header {
+    background: rgba(2, 162, 143, 1);
+    color: white;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.main-content {
+    padding: 2rem 0;
+    flex: 1 0 auto;
+}
+
+.main-content .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.featured-post {
+    position: relative;
+    height: 40rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.featured-image {
+    background-image: url('./imagens/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.featured-image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.post-category {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.post-info {
+    position: relative;
+    padding: 2rem;
+    color: white;
+    z-index: 2;
+}
+
+.post-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.post-author {
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background: rgba(2, 162, 143, 1);
+    padding: 1rem 1.5rem;
+    border-radius: 0.8rem;
+    color: white;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.view-all {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: underline;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+    position: relative;
+    height: 18rem;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-tag {
+    font-size: 1.2rem;
+    color: rgba(2, 162, 143, 1);
+    font-weight: 400;
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-card .post-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+.post-card .post-author {
+    font-size: 1.2rem;
+    color: rgba(97, 97, 97, 1);
+    margin-bottom: 1rem;
+}
+
+.post-excerpt {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.post-date {
+    font-size: 1.2rem;
+    color: rgba(97, 97, 97, 1);
+    font-weight: 500;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar .section-title {
+    background: rgba(2, 162, 143, 1);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.popular-post-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.popular-post-image {
+    width: 13.5rem;
+    flex-shrink: 0;
+    padding: 0.8rem 0 0.8rem 0.8rem;
+}
+
+.popular-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+.popular-post-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 0;
+}
+
+.popular-post-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.popular-post-date {
+    font-size: 1.2rem;
+    color: rgba(97, 97, 97, 1);
+    font-weight: 500;
+}
+
+.categories-list {
+    list-style: none;
+    border-radius: 0.8rem;
+    background-color: white;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.category-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+    transition: background-color 0.2s;
+}
+
+.category-link:hover {
+    background-color: #f0f0f0;
+}
+
+.category-name {
+    font-size: 1.4rem;
+}
+
+.category-name::before {
+    content: ">";
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+.category-count {
+    font-size: 1.4rem;
+    color: rgba(97, 97, 97, 1);
+}
+
+.footer {
+    background: rgba(2, 162, 143, 1);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    /* margin-top: 30px; */
+    flex-shrink: 0;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .main-content .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .featured-post {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .featured-post {
+        height: 25rem;
+    }
+    
+    .post-title {
+        font-size: 2.2rem;
+    }
+}
