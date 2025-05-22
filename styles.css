@@ -126,14 +126,9 @@ img {
 }
 
 .post-category {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.8rem;
+    line-height: 1;
     font-size: 1.4rem;
+    opacity: 0.9;
 }
 
 .post-info {
